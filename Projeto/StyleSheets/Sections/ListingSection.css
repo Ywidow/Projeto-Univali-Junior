@@ -1,0 +1,141 @@
+.listing-section{
+  display: flex;
+
+  width: 100%;
+
+  row-gap: 5vw;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.listing-section__items-list{
+  display: flex;
+
+  flex-direction: column;
+  row-gap: 1vw;
+}
+
+.items-list__item{
+  display: flex;
+
+  font-family: 'Roboto';
+  font-size: clamp(7px, 1.5vw, 20rem);
+
+  background-color: #EAC696;
+  color: #65451F;
+
+  border: 0px solid transparent;
+  border-radius: 20px;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+
+  column-gap: 1.5vw;
+}
+
+.list__item-text-area{
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__buttons-area{
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  column-gap: 1vw;
+}
+
+.list__button{
+  display: flex;
+
+  background-color: #EAC696;
+  color: #65451F;
+
+  height: clamp(20px, 3vw, 20rem);
+  width: clamp(20px, 3vw, 20rem);
+
+  border: 0.2vw solid #65451F;
+  border-radius: 100%;
+
+  justify-content: center;
+  align-items: center;
+
+  transition: 1s;
+}
+
+.list__button:hover{
+  column-gap: 1vw;
+
+  width: clamp(8px, 8vw, 20rem);
+
+  border-radius: 15px;
+
+  background-color: #65451F;
+}
+
+.list__button--type--delete:hover{
+  color: #ff0000;
+}
+
+.list__button--type--edit:hover{
+  color: #3939fd;
+}
+
+.buttons__icon{
+  font-size: clamp(12px, 1.5vw, 20rem);
+}
+
+.buttons-area__text-container{
+  opacity: 0;
+  transition: opacity 0.3s ease 0.3s; 
+  transition: font-size 1s ease;
+
+  font-size: 0;
+  font-family: 'Modak', sans-serif;
+  color: #EAC696;
+
+  justify-content: center;
+  align-items: end;
+}
+
+.list__button:hover .buttons-area__text-container{
+  font-size: clamp(12px, 1.5vw, 20rem);
+  opacity: 1;
+}
+
+.listing-section__button{
+  display: flex;
+
+  background-color: #EAC696;
+  color: #65451F;
+
+  height: 4vw;
+  width: 4vw;
+
+  border: 0px solid transparent;
+
+  border-radius: 100%;
+
+  justify-content: center;
+  align-items: center;
+
+  transition: 1s;
+}
+
+.listing-section__button:hover{
+  background-color: #65451F;
+  color: #EAC696;
+
+  border: 2px solid #EAC696;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomy Market</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./StyleSheets/NavBarStyle.css">
+    <link rel="stylesheet" href="/StyleSheets/Sections/IntroductionSection.css">
+    <link rel="stylesheet" href="./StyleSheets/Sections/InstructionSection.css">
+    <link rel="stylesheet" href="./StyleSheets/Sections/FormSection.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Modak&family=Open+Sans&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+
+  <body>
+    <nav class="body__nav-bar">
+      <h2 class="nav-bar__text">Thomy Market</h2>
+
+      <ul class="nav-bar__buttons-list">
+        <li>
+          <a href="#Home">
+            <button class="nav-bar__button" id="HomeButton">
+              <i class="fa-solid fa-house nav-bar__icon" style="color: #EAC696;"></i>
+
+              <span class="nav-bar__text-container">Home</span>
+            </button>
+          </a>
+        </li>
+
+        <li>
+          <a href="#Intructions">
+            <button class="nav-bar__button" id="InstructionButton">
+              <i class="fa-solid fa-book nav-bar__icon" style="color: #EAC696;"></i>
+
+              <span class="nav-bar__text-container">Tutorial</span>
+            </button>
+          </a>
+        </li>
+
+        <li>
+          <a href="#form-section">
+            <button class="nav-bar__button" id="FormButton">
+              <i class="fa-solid fa-clipboard-list nav-bar__icon" style="color: #EAC696;"></i>
+              <span class="nav-bar__text-container">Form</span>
+            </button>
+          </a>
+        </li>
+
+        <li>
+          <a href="./list.html">
+            <button class="nav-bar__button">
+              <i class="fa-solid fa-list nav-bar__icon" style="color: #EAC696;"></i>
+              <span class="nav-bar__text-container">List</span>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="body__sections-container">
+      <section class="introduction-section" id="Home">
+        <h1 class="sections-container__tittle">Introdução</h1>
+
+        <div class="introduction-section__info-area">
+          <main class="info-area__text-area">
+            <p class="introduction-section__text--font-size__roboto-small">Olá,</p>
+
+            <div class="text-container__apresentation-container">
+              <p class="text-container__text">Meu nome é</p>
+  
+              <h1 class="container__text--weight--bold">Guilherme Thomy</h1>
+            </div>
+
+            <div class="apresentation-container__about-container">
+              <p class="about-container__text">
+                E este site foi desenvolvido para testar minhas habilidades em relação aos requisitos
+                informados pela empresa "Univali", gostaria de ante-mão agradecer a oportunidade. Espero que gostem!
+              </p>
+            </div>
+          </main>
+        </div>
+      </section>
+
+      <section class="instruction-section" id="Intructions">
+        <h1 class="sections-container__tittle">Instruções</h1>
+        <ul class="instruction-section__informations-list">
+          <li>
+            <p class="instruction-section__text">
+              Este site se caracteriza como um estilo de "mercado", onde foi feito atráves das exigências
+              fornecidas pela empresa
+            </p>
+          </li>
+          
+          <li>
+            <p class="instruction-section__text">
+              Na latera esquerda, é possível ver uma "aba de navegação", onde será seu principal "mapa", mapa
+              se localizar e acessar as páginas principais
+            </p>
+          </li>
+
+          <li>
+            <p class="instruction-section__text">
+              No botão "Home", você será encaminhado para esta exata página
+            </p>
+          </li>
+
+          <li>
+            <p class="instruction-section__text">
+              No botão "List", você será encaminhado para a página de listagem dos itens do mercado.
+              Nesta página de listagem, você poderá ver todos os itens dentro do seu mercado, e poderá também
+              alterar qualquer item, ou atualizar as informações do item
+            </p>
+          </li>
+
+          <li>
+            <p class="instruction-section__text">
+              No botão "Form", você será encaminhado para a seção desta página onde há o formulário em questão.
+              Neste formulário, você poderá adicionar um item ao seu mercado
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="form-section" id="form-section">
+        <h2 class="sections-container__tittle">Formulário</h2>
+
+        <form class="form-section__form" id="Form">
+          <div class="form__text-area" id="Form-Situation">
+            <p class="form__text">Você esta: </p>
+            <span class="form__text form__text--situation--enable">Adicionando</span>
+            <span class="form__text form__text--situation--disable">Alterando</span>
+            <p class="form__text">um item</p>
+          </div>
+
+          <!--Nome do Produto-->
+          <div class="form__containers">
+            <label class="form__labels" for="NameInput">Nome:</label>
+
+            <input id="NameInput" type="text" name="Name" class="form__input-text" placeholder="Nome do Item" required>
+          </div>
+
+          <!---Unidade de Medida do Produto-->
+          <div class="form__containers">
+            <label class="form__labels" for="UnitSelect">Unidade de Medida:</label>
+
+            <select name="UnitSelect" id="UnitSelect" class="form__select" required>
+              <option value="NotChoosed" selected disabled class="select__option">Selecione uma opção...</option>
+      
+              <option value="Kilograms" class="select__option">Quilogramas (Kg)</option>
+      
+              <option value="Liters" class="select__option">Litros (Li)</option>
+      
+              <option value="Unity" class="select__option">Unidade (Un)</option>
+            </select>
+          </div>
+
+          <!--Quantidade do Produto-->
+          <div class="form__containers" id="Quantity-Div">
+            <label class="form__labels" for="QuantityInput">Quantidade:</label>
+
+            <input id="QuantityInput" type="text" name="Quantity" class="form__input-text" placeholder="Quantidade" required>
+          </div>
+
+          <!--Preço do Produto-->
+          <div class="form__containers">
+            <label class="form__labels" for="PriceInput">Preço do Item:</label>
+
+            <input id="PriceInput" type="text" name="Price" class="form__input-text" placeholder="Preço" required>
+          </div>
+
+          <!--Perecibilidade do Produto-->
+          <div class="form__containers form__input-checkbox">
+            <p class="form__labels" >O Item é Perecível?</p>
+
+            <label class="form__labels">
+              <input type="checkbox" class="form__check-box" name="optionCheckBox" value="Yes"> Sim
+            </label>
+
+            <label class="form__labels">
+                <input type="checkbox" class="form__check-box" name="optionCheckBox" value="No"> Não
+            </label>
+          </div>
+
+          <!--Data de Validade do Produto-->
+          <div class="form__containers--status--disabled form__input-checkbox" id="ValidationDate-div">
+            <label class="form__labels" for="ValidationDate">Data de Validade:</label>
+            
+            <input id="ValidationDate" type="date" name="ValidationDate" class="form__input-date" required disabled>
+          </div>
+          
+          <!--Data de Fabricação do Produto-->
+          <div class="form__containers form__input-checkbox">
+            <label class="form__labels" for="FabricationDate">Data de Fabricação:</label>
+            
+            <input id="FabricationDate" type="date" name="FabricationDate" class="form__input-date" required>
+          </div>
+
+          <span class="form__buttons-container">
+            <input type="submit" placeholder="Submit" class="form__input-submit" value="Salvar">
+            <a href="./list.html">
+              <button class="form__button" type="button" onclick="RemoveLocaleStageUpdate()">Cancelar</button>
+            </a>
+          </span>
+        </form>
+      </section>
+    </div>
+  </body>
+
+  <script src="./Scripts/index.js"></script>
+  <script src="./Scripts/./PagesAnimations/IndexPage.js"></script>
+</html>

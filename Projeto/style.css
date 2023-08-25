@@ -1,0 +1,51 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  display: flex;
+  
+  width: 100%;
+
+  background-color: #65451F;
+
+  column-gap: 2vw;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+.body__sections-container{
+  display: flex;
+
+  flex-grow: 1;
+
+  flex-direction: column;
+  padding: 2vw;
+  width: 75%;
+  height: 100%;
+
+  margin-left: 20vw
+}
+
+.sections-container__tittle{
+  font-family: 'Modak', sans-serif;
+  color: #EAC696;
+  font-size: clamp(20px, 4.5vw, 20rem);
+  font-weight: 400;
+}

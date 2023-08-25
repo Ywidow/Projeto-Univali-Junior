@@ -1,0 +1,106 @@
+.body__nav-bar{
+  position: fixed;
+
+  display: flex;
+
+  width: 18%;
+  height: 100%;
+
+  background-color: #EAC696;
+
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5vw;
+}
+
+.nav-bar__text{
+  font-family: 'Modak', sans-serif;
+  color: #765827;
+
+  font-size: clamp(12px, 2.5vw, 20rem);
+  font-weight: 400;
+}
+
+.nav-bar__buttons-list{
+  display: flex;
+
+  flex-direction: column;
+  row-gap: 1.5vw;
+}
+
+.nav-bar__button{
+  display: flex;
+
+  border: 0px solid transparent;
+  border-radius: 100%;
+  background-color: #65451F;
+
+  height: clamp(20px, 3vw, 20rem);
+  width: clamp(20px, 3vw, 20rem);
+  
+  justify-content: center;
+  align-items: center;
+  
+  transition: 1s;
+}
+
+.nav-bar__button:hover{
+  padding: 1.5vw 5vw;
+  border-radius: 2.5vw;
+  column-gap: 1.5vw;
+}
+
+.nav-bar__button:hover .nav-bar__text-container{
+  font-size: clamp(8px, 1.7vw, 20rem);
+  opacity: 1;
+}
+
+.nav-bar__icon{
+  font-size: clamp(5px, 1.5vw, 20rem);
+}
+
+.nav-bar__text-container{
+  opacity: 0;
+  transition: opacity 0.3s ease 0.3s; 
+  transition: font-size 1s ease;
+
+  font-size: 0;
+  font-family: 'Modak', sans-serif;
+  color: #EAC696;
+
+  justify-content: center;
+  align-items: end;
+}
+
+/* JS */
+
+.nav-bar__text-container--font-size--active{
+  font-size: clamp(8px, 1.7vw, 20rem);
+  opacity: 1;
+
+  font-family: 'Modak', sans-serif;
+  color: #EAC696;
+
+  justify-content: center;
+  align-items: end;
+}
+
+
+.nav-bar__button--status--actived{
+  display: flex;
+
+  background-color: #65451F;
+
+  border: 0px solid transparent;
+
+  height: clamp(20px, 3vw, 20rem);
+  width: clamp(20px, 3vw, 20rem);
+  
+  justify-content: center;
+  align-items: center;
+  
+  transition: 1s;
+  padding: 1.5vw 5vw;
+  border-radius: 2.5vw;
+  column-gap: 1.5vw;
+}

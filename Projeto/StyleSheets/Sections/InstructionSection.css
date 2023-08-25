@@ -1,0 +1,34 @@
+.instruction-section{
+  display: flex;
+
+  width: 100%;
+
+  row-gap: 5vw;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 20vw;
+}
+
+.instruction-section__informations-list{
+  display: flex;
+
+  flex-direction: column;
+
+  list-style:disc;
+
+  font-size: clamp(10px, 2vw, 20rem);
+
+  color: #EAC696;
+
+  row-gap: 2vw;
+}
+
+.instruction-section__text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
