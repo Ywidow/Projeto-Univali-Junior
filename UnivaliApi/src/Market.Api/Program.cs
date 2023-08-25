@@ -13,7 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<ItemContext>( //Para usar o Banco de Dados
     options => {
         options
-            .UseNpgsql("Host=localhost;Database=MarketProject;Username=postgres;Password=Gui250504");
+            .UseNpgsql("Host=localhost;Database=MarketProject;Username=postgres;Password=ColoqueASenha"); // <-- Senha do PostgreSQL
     }
 );
 
